@@ -11,7 +11,7 @@ const Movie = () => {
     useEffect(()=>{
         const fecthAllMovies = async ()=>{
             try{
-                const res = await axios.get("http://localhost:8206/movies")
+                const res = await axios.get("https://movie-crud-api.vercel.app/movies")
                 setMovies(res.data);
             }catch(err){
                 console.log(err)
@@ -22,7 +22,7 @@ const Movie = () => {
 
     const handleDelete = async (id)=>{
         try{
-            await axios.delete("http://localhost:8206/movies/"+id)
+            await axios.delete("https://movie-crud-api.vercel.app/movies/"+id)
             window.location.reload()
         }catch(err){
             console.log(err)

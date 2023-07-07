@@ -23,7 +23,7 @@ const Add = () => {
   const handleClick = async e => {
     e.preventDefault()
     try{
-      await axios.post("http://localhost:8206/movies", movie)
+      await axios.post("https://movie-crud-api.vercel.app/movies", movie)
       navigate("/")
     }catch(err){
       console.log(err)

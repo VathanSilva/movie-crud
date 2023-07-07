@@ -26,7 +26,7 @@ const Update = () => {
   const handleClick = async e => {
     e.preventDefault()
     try {
-      await axios.put("http://localhost:8206/movies/"+ movieId, movie)
+      await axios.put("https://movie-crud-api.vercel.app/movies/"+ movieId, movie)
       navigate("/")
     } catch (err) {
       console.log(err)
