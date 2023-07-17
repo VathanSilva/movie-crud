@@ -42,9 +42,9 @@ const Update = () => {
           <h1 className='text-black'>Update the Movie</h1>
           <input type='text' placeholder='Movie Name' onChange={handleChange} name="movieName" />
           <input type='text' placeholder='Director' onChange={handleChange} name="director" />
-          <input type='number' placeholder='budget' onChange={handleChange} name="budget" />
+          <input type='text' placeholder='budget' onChange={handleChange} name="budget" />
           <input type='text' placeholder='Cast' onChange={handleChange} name="moviePic" />
-          <input type='number' placeholder='IMDB Rate' onChange={handleChange} name="imdbrate" />
+          <input type='text' placeholder='IMDB Rate' onChange={handleChange} name="imdbrate" />
           <button className='formButtonup' onClick={handleClick}>Update</button>
         </div>
       </div>
