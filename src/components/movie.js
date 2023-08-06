@@ -81,7 +81,7 @@ const Movie = () => {
                         {movie.budget}
                     </td>
                     <td>
-                        {movie.moviePic}
+                        {movie.cast}
                     </td>
                     <td>
                         {movie.imdbrate}

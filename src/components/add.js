@@ -9,7 +9,7 @@ const Add = () => {
     movieName:"",
     director:"",
     budget:"",
-    moviePic:"",
+    cast:"",
     imdbrate:"",
 
   });
@@ -41,7 +41,7 @@ const Add = () => {
           <input type='text' placeholder='Movie Name' onChange={handleChange} name="movieName"/>
           <input type='text' placeholder='Director' onChange={handleChange} name="director" />
           <input type='text' placeholder='budget' onChange={handleChange} name="budget" />
-          <input type='text' placeholder='Cast' onChange={handleChange} name="moviePic" />
+          <input type='text' placeholder='Cast' onChange={handleChange} name="cast" />
           <input type='text' placeholder='IMDB Rate' onChange={handleChange} name="imdbrate" />
           <button className='formButtonadd' onClick={handleClick}>Add</button>
         </div>
