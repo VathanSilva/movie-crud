@@ -16,8 +16,18 @@ const Add = () => {
 
   const navigate = useNavigate();
 
+  const [file, setFile] = useState();
+
   const handleChange = (e) => {
     setMovie((prev) => ({...prev, [e.target.name]: e.target.value }));
+    
+    console.log(e.target.files);
+    if (e.target.files && e.target.files.length > 0) {
+      let file = e.target.files[0];
+      let fileURL = URL.createObjectURL(file);
+
+      setFile(fileURL);
+    }
   };
 
   const handleClick = async e => {
@@ -43,7 +53,8 @@ const Add = () => {
           <input type='text' placeholder='budget' onChange={handleChange} name="budget" />
           <input type='text' placeholder='Cast' onChange={handleChange} name="cast" />
           <input type='text' placeholder='IMDB Rate' onChange={handleChange} name="imdbrate" />
-          <input type='image' placeholder='Image' onChange={handleChange} name="image" />
+          <input type='file' placeholder='Image' onChange={handleChange} name="image" />
+          <img src={file} />
           <button className='formButtonadd' onClick={handleClick}>Add</button>
         </div>
       </div>
