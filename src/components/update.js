@@ -10,7 +10,7 @@ const Update = () => {
     budget: "",
     cast: "",
     imdbrate: "",
-
+    image:"",
   });
 
   const navigate = useNavigate();
@@ -45,6 +45,7 @@ const Update = () => {
           <input type='text' placeholder='budget' onChange={handleChange} name="budget" />
           <input type='text' placeholder='Cast' onChange={handleChange} name="cast" />
           <input type='text' placeholder='IMDB Rate' onChange={handleChange} name="imdbrate" />
+          <input type='image' placeholder='Image' onChange={handleChange} name="image" />
           <button className='formButtonup' onClick={handleClick}>Update</button>
         </div>
       </div>
