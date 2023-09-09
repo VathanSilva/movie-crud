@@ -61,9 +61,6 @@ const Movie = () => {
                     IMDB Rate
                 </th>
                 <th className='bg-black text-white'>
-                    Image
-                </th>
-                <th className='bg-black text-white'>
                     Action
                 </th>
             </tr>
@@ -88,9 +85,6 @@ const Movie = () => {
                     </td>
                     <td>
                         {movie.imdbrate}
-                    </td>
-                    <td>
-                        {movie.image}
                     </td>
                     <td className='delup'>
                         <button className='delete' onClick={()=>handleDelete(movie.id)}>Delete</button>
